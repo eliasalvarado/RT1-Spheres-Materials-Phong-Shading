@@ -63,7 +63,7 @@ while(isRunning):
         elif event.type == pg.KEYDOWN:
             if event.key == pg.K_ESCAPE:
                 isRunning = False
-            if event.key == pg.K_s:
+            elif event.key == pg.K_s:
                 pg.image.save(screen, "image.bmp")
     raytracer.rtClear()
     raytracer.rtRender()
